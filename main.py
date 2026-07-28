@@ -1,10 +1,14 @@
 # incident-test-app/main.py
-# INTENTIONAL BUG: missing_module import will fail
-import missing_module  # This module does not exist -> ImportError
 
 def compute(a, b):
-    return a / b  # Also: ZeroDivisionError if b=0
+    # Check for division by zero to avoid ZeroDivisionError
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
 
 if __name__ == '__main__':
-    result = compute(10, 0)
-    print(f"Result: {result}")
+    try:
+        result = compute(10, 2)  # Example with valid division
+        print(f"Result: {result}")
+    except ValueError as e:
+        print(f"Error: {e}")
