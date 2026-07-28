@@ -1,0 +1,12 @@
+# This is a new Python file
+
+class HelloWorld:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print(f'Hello, {self.name}!')
+
+# Example usage
+hello_world = HelloWorld('World')
+hello_world.greet()
