@@ -1,4 +1,3 @@
-import non_existent_webhook_test_module
 import absolutely_broken_module_test
 import missing_module_for_ci_test
 
