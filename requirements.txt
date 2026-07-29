@@ -1,2 +1,2 @@
-# No real dependencies - missing_module is intentionally absent
-requests==2.31.0
+idna==3.4
+requests==2.32.0
