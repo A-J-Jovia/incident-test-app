@@ -1,3 +1,5 @@
+import missing_module_for_ci_test
+
 # incident-test-app/main.py
 # INTENTIONAL BUG: missing_module import will fail
 import missing_module  # This module does not exist -> ImportError
