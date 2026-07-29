@@ -1,13 +1,9 @@
-import non_existent_webhook_test_module
-
-import missing_module_for_ci_test
-
-# incident-test-app/main.py
-# INTENTIONAL BUG: missing_module import will fail
-import missing_module  # This module does not exist -> ImportError
+import math
 
 def compute(a, b):
-    return a / b  # Also: ZeroDivisionError if b=0
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b 
 
 if __name__ == '__main__':
     result = compute(10, 2)
