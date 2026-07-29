@@ -1,3 +1,5 @@
+import non_existent_webhook_test_module
+
 import missing_module_for_ci_test
 
 # incident-test-app/main.py
