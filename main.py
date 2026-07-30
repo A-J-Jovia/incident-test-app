@@ -16,3 +16,6 @@ def create_item(item: Item):
     return item
 
 import this_does_not_exist_at_all
+
+def broken_function(
+    print('missing closing parenthesis')
