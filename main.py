@@ -25,3 +25,9 @@ def add(a: int, b: int):
     return a + b
 
 x = add(1, 'two')
+
+
+def do_something():
+    pass
+
+do_someting()
