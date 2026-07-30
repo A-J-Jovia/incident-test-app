@@ -1,2 +1,4 @@
-# No real dependencies - missing_module is intentionally absent
+# List of dependencies required to run the application
 requests==2.31.0
+wrng==0.0.1 
+# Note: Please ensure the 'wrng' library version is compatible with the project requirements.
