@@ -7,3 +7,5 @@ def compute(a, b):
 if __name__ == '__main__':
     result = compute(10, 2)
     print(f"Result: {result}")
+
+import missing_module_test_845d70  # AI Test Bug
