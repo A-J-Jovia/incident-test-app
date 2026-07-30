@@ -1,14 +1,16 @@
 import os
 import logging
-import sys
 
 # Define your application's main function
 def main():
     # Initialize logging to capture any critical errors
-    logging.basicConfig(level=logging.CRITICAL) # Removed unnecessary 'stream/sys.stderr'
+    logging.basicConfig(level=logging.CRITICAL) # Removed unnecessary 'stream=sys.stderr' and added sys import here
 
     # Log critical message
     logging.critical("Error running application")
+
+# Set the necessary import before sys
+import sys
 
 # Set the application's entry point
 if __name__ == "__main__":
