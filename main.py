@@ -13,3 +13,5 @@ import this_does_not_exist_at_all
 
 def broken_function(
     print('missing closing parenthesis')
+
+print(undefined_var)
