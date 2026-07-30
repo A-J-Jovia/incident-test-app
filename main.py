@@ -14,3 +14,5 @@ def read_root():
 @app.post('/items/')
 def create_item(item: Item):
     return item
+
+import this_does_not_exist_at_all
