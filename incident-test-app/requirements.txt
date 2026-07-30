@@ -1,0 +1,23 @@
+# This file specifies the dependencies required by the project.
+#
+# Each line is a dependency that can be installed with pip:
+#
+# $ pip install -r requirements.txt
+
+# Add a dependency on a package like so:
+#    package_name==version
+
+# Note: The exact version should be used if available, to prevent breaking changes from upstream
+
+# Example of how you might add dependencies for popular packages:
+
+# For requests
+requests
+
+# For Flask
+flask
+
+# For Pandas
+pandas
+
+# Add your package names here...
