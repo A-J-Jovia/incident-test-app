@@ -19,3 +19,9 @@ import this_does_not_exist_at_all
 
 def broken_function(
     print('missing closing parenthesis')
+
+
+def add(a: int, b: int):
+    return a + b
+
+x = add(1, 'two')
