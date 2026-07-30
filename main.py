@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-app = FastAPI()
+app = undefined_variable_fastapi()
 
 class Item(BaseModel):
     name: str
