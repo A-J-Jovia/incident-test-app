@@ -1,1 +1,4 @@
-[]
+# requirements.txt
+
+[notice] A new release of pip is available: 26.1.2 -> 26.2
+# To update, run: pip install --upgrade pip
