@@ -1,0 +1,12 @@
+# main.py
+from typing import Dict
+
+def print_hello() -> None:
+    print("Hello")
+
+# The import for FastAPI is not needed here since the project does not have a clear dependence on FastAPI as shown
+# below. However, if you really need FastAPI, please install it via pip:
+
+# pip install fastapi
+
+print_hello()
