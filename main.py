@@ -1,23 +1,16 @@
-import missing_module
+from fastapi import FastAPI
+from pydantic import BaseModel
 
-def compute(a, b):
-    return a / b
+app = FastAPI()
 
-if __name__ == '__main__':
-    result = compute(10, 2)
-    print(f"Result: {result}")
+class Item(BaseModel):
+    name: str
+    price: float
 
-import missing_module_test_90bd2e  # AI Test Bug
+@app.get('/')
+def read_root():
+    return {'Hello': 'World'}
 
-import this_does_not_exist_at_all
-
-def broken_function(
-    print('missing closing parenthesis')
-
-print(undefined_var)
-
-
-def add(a: int, b: int):
-    return a + b
-
-x = add(1, 'two')
+@app.post('/items/')
+def create_item(item: Item):
+    return item
