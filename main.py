@@ -1,5 +1,4 @@
-# incident-test-app/main.py
-import missing_module  # This module does not exist -> ImportError
+import missing_module
 
 def compute(a, b):
     return a / b
@@ -7,7 +6,3 @@ def compute(a, b):
 if __name__ == '__main__':
     result = compute(10, 2)
     print(f"Result: {result}")
-
-import missing_module_test_845d70  # AI Test Bug
-
-import missing_module_test_ae8c82  # AI Test Bug
