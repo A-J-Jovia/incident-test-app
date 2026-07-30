@@ -1,28 +1,4 @@
-# requirements.txt
 requests==2.31.0
 requests-toolbelt==0.9.1
 fastapi==0.93.0
 pydantic==1.10.2
-
----
-# main.py
-import uvicorn
-from fastapi import FastAPI
-from pydantic import BaseModel
-
-app = FastAPI()
-
-class Item(BaseModel):
-    name: str
-    price: float
-    is_available: bool
-
-@app.get("/items/")
-def read_items():
-    return [{"name": "Item1", "price": 100.0, "is_available": True}, {"name": "Item2", "price": 200.0, "is_available": False}]
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
-
----
-The "---" in requirements.txt was causing a syntax error, thus the ModuleNotFoundError in pip when trying to reinstall packages due to a missing package. We removed this line from requirements.txt to resolve the issue.
