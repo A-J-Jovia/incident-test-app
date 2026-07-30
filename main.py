@@ -1,7 +1,7 @@
 import non_existent_webhook_test_module
 import absolutely_broken_module_test
 import missing_module_for_ci_test
-import zzz_fresh_test_case
+import final_check_module_v2
 
 # incident-test-app/main.py
 # INTENTIONAL BUG: missing_module import will fail
