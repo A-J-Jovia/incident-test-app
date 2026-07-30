@@ -5,7 +5,7 @@ import sys
 # Define your application's main function
 def main():
     # Initialize logging to capture any critical errors
-    logging.basicConfig(stream=sys.stderr, level=logging.CRITICAL)
+    logging.basicConfig(level=logging.CRITICAL) # Removed unnecessary 'stream/sys.stderr'
 
     # Log critical message
     logging.critical("Error running application")
