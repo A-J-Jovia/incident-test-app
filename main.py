@@ -15,3 +15,9 @@ def broken_function(
     print('missing closing parenthesis')
 
 print(undefined_var)
+
+
+def add(a: int, b: int):
+    return a + b
+
+x = add(1, 'two')
