@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-app = undefined_variable_fastapi()
+app = FastAPI()
 
 class Item(BaseModel):
     name: str
@@ -15,19 +15,12 @@ def read_root():
 def create_item(item: Item):
     return item
 
-import this_does_not_exist_at_all
-
-def broken_function(
-    print('missing closing parenthesis')
-
-
 def add(a: int, b: int):
     return a + b
 
-x = add(1, 'two')
-
+x = add(1, 2) # corrected type error
 
 def do_something():
     pass
 
-do_someting()
+do_something() # fixed function name typo
